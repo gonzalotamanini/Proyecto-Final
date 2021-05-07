@@ -1,3 +1,4 @@
+/*Generales*/
 .alturaCarrousel {
   height: 100vh;
   overflow: hidden; }
@@ -40,6 +41,9 @@
   overflow: hidden;
   width: 245.5px;
   height: 199.2px; }
+
+.boton-index {
+  width: 100%; }
 
 /*CATALOGO*/
 .imagen-catalogo {

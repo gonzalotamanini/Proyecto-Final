@@ -1,3 +1,6 @@
+/*Generales*/
+$azul: #089FDE;
+
 .alturaCarrousel {
     height: 100vh;
     overflow: hidden;
@@ -51,6 +54,11 @@
     width: 245.5px;
     height: 199.2px;
 }
+
+.boton-index {
+    width: 100%;
+}
+
 /*CATALOGO*/
 .imagen-catalogo {
     overflow: hidden;
@@ -62,7 +70,7 @@
 
 /*ERROR 404*/
 .bg-error {
-    background-color: #089FDE;
+    background-color: $azul;
 }
 
 .altura-error {
@@ -183,7 +191,6 @@
     .imagen-error {
         height: 60vh;
     }
-    
 }
 
 @media (min-width:1200px) {
