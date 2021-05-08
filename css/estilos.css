@@ -17,11 +17,11 @@
 
 /*INDEX*/
 #posicion-carousel {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-  height: auto;
-  width: 100%; }
+  height: auto; }
+
+.oscuridad-carousel {
+  background-color: black;
+  opacity: 0; }
 
 .padding-titulo {
   padding-bottom: auto;
@@ -103,7 +103,10 @@
   .imagen-usos {
     overflow: hidden;
     width: 350px;
-    height: 284px; } }
+    height: 284px; }
+  .oscuridad-carousel {
+    background-color: black;
+    opacity: 0.5; } }
 
 @media (min-width: 768px) {
   .padding-titulo {
