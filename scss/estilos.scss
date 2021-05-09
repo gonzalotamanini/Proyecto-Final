@@ -78,7 +78,7 @@ $azul: #089FDE;
 }
 
 .bg-gris {
-    background-color: rgb(219, 218, 218)
+    background-color: rgb(219, 218, 218);
 }
 
 .pt-100 {
@@ -144,6 +144,23 @@ $azul: #089FDE;
 }
 
 /*MATERIALES*/
+.altura-portada {
+    position: relative;
+    width: 100%;
+    height: 35vw;
+    margin-top: 150px;
+    padding-top: 150px;
+    background-image: url("Imagenes/Materiales/Portada2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vw;
+}
+
 .imagen-material {
     width: auto;
 }
