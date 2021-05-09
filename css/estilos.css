@@ -1,4 +1,57 @@
 /*Generales*/
+/*HEADER*/
+.ocultar-pantalla {
+  visibility: hidden; }
+
+.ocultar-telefono {
+  visibility: visible; }
+
+.alinear-texto-derecha {
+  text-align: left; }
+
+.bg-azul {
+  background-color: #3E8DDD; }
+
+#botones-menu {
+  color: #28292B;
+  font-weight: 600; }
+
+#botones-menu:hover {
+  color: #3E8DDD; }
+
+#botones-submenu {
+  color: rgba(255, 255, 255, 0.842);
+  font-weight: 600; }
+
+#botones-submenu:hover {
+  color: #3E8DDD; }
+
+#bg-submenu {
+  background-color: #5f7085;
+  font-weight: 600;
+  color: white; }
+
+#boton-cotizar {
+  background-color: #3E8DDD;
+  font-weight: 600; }
+
+#boton-cotizar:hover {
+  background-color: #85C7F7; }
+
+.dropdown-menu:after {
+  position: absolute;
+  top: -6px;
+  left: 10%;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #5f7085;
+  border-left: 6px solid transparent;
+  content: ''; }
+
+#achicar-logo {
+  width: 150px; }
+
+/*INDEX*/
 .alturaCarrousel {
   height: 100vh;
   overflow: hidden; }
@@ -15,13 +68,14 @@
 .altura-100 {
   min-height: 100vh; }
 
-/*INDEX*/
 #posicion-carousel {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
   height: auto; }
 
 .oscuridad-carousel {
-  background-color: black;
-  opacity: 0; }
+  background-color: white; }
 
 .padding-titulo {
   padding-bottom: auto;
@@ -34,9 +88,6 @@
 #texto-alineado {
   text-align: left; }
 
-#margen-derecho-0 {
-  margin-right: 0; }
-
 .imagen-usos {
   overflow: hidden;
   width: 245.5px;
@@ -45,6 +96,14 @@
 .boton-index {
   width: 100%; }
 
+.boton-cotizar {
+  background-color: #3E8DDD;
+  width: 100%;
+  color: white; }
+
+.boton-cotizar:hover {
+  background-color: #85C7F7; }
+
 /*CATALOGO*/
 .imagen-catalogo {
   overflow: hidden;
@@ -52,6 +111,36 @@
   height: 225px;
   align-items: center;
   justify-content: center; }
+
+/*MATERIALES*/
+.imagen-material {
+  width: auto; }
+
+.overlay {
+  position: absolute;
+  top: 16px;
+  bottom: 51px;
+  left: 16px;
+  right: 16px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.imagen-material:hover .overlay {
+  opacity: 1; }
+
+.text {
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
 
 /*ERROR 404*/
 .bg-error {
@@ -103,10 +192,7 @@
   .imagen-usos {
     overflow: hidden;
     width: 350px;
-    height: 284px; }
-  .oscuridad-carousel {
-    background-color: black;
-    opacity: 0.5; } }
+    height: 284px; } }
 
 @media (min-width: 768px) {
   .padding-titulo {
@@ -121,6 +207,33 @@
     height: 284px; } }
 
 @media (max-width: 576px) {
+  /*HEADER*/
+  .ocultar-pantalla {
+    visibility: visible; }
+  .ocultar-telefono {
+    display: none; }
+  .alinear-texto-derecha {
+    text-align: right;
+    padding-right: 5%; }
+  #bg-submenu {
+    background-color: #fff;
+    font-weight: 600;
+    color: white;
+    border-color: #5f7085; }
+  #botones-submenu {
+    color: #28292B;
+    font-weight: 600; }
+  #botones-submenu:hover {
+    color: #3E8DDD; }
+  #achicar-logo {
+    width: 100px; }
+  .dropdown-menu:after {
+    border-bottom: 6px solid transparent; }
+  /*INDEX*/
+  .oscuridad-carousel {
+    background-color: black;
+    opacity: 0.5; }
+  /*404*/
   .altura-error {
     height: 80vh;
     margin: 20vh auto 0; }

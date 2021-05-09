@@ -17,26 +17,36 @@
 </head>
 <body>
     <!--Header-->
-    <div class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 mb-3 bg-primary border-bottom shadow-sm fixed-top">
-        <a class="navbar-brand my-0 mr-md-auto mr-0 font-weight-normal text-light" href="index.html">
-            <img src="Imagenes/Logo.svg" width="150" id="margen-derecho-0" alt="Logo">
+    <nav class="navbar navbar-expand-sm bg-white navbar-light shadow justify-content-end fixed-top">
+        <a class="navbar-brand my-0 mr-md-auto mr-0 ml-4" href="index.html">
+            <img src="Imagenes/Logo.svg" id="achicar-logo" alt="Logo" title="Ir a Inicio">
           </a>
-        <nav class="my-2 my-md-0 mr-md-3">
-        <div class="btn-group">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Info
-            </button>
-            <div class="dropdown-menu">
-            <a class="dropdown-item" href="materiales.html">Materiales</a>
-            <a class="dropdown-item" href="infill.html">Infill/Relleno</a>
-            <a class="dropdown-item" href="calidad.html">Calidad</a>
-            </div>
+        <a class="btn text-light ml-auto mr-1 ocultar-pantalla" id="boton-cotizar" href="cotizar.html">Cotizar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav text-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="botones-menu" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Info
+                    </a>
+                    <ul class="dropdown-menu float-right alinear-texto-derecha border-light" id="bg-submenu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item nav-link" id="botones-submenu" href="materiales.html">Materiales</a></li>
+                      <li><a class="dropdown-item nav-link" id="botones-submenu" href="infill.html">Infill/Relleno</a></li>
+                      <li><a class="dropdown-item nav-link" id="botones-submenu" href="calidad.html">Calidad</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="botones-menu" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="botones-menu" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-        <a class="p-2 text-white" href="catalogo.html">Catálogo</a>
-        <a class="p-2 text-white" href="contacto.html">Contacto</a>
-        </nav>
-        <a class="btn btn-outline-primary bg-light text-primary" href="cotizar.html">Cotizar</a>
-    </div>
+        <a class="btn text-light mr-4 ocultar-telefono" id="boton-cotizar" href="cotizar.html">Cotizar</a>
+    </nav>
 
 <!--Información-->
 <div class="container-fluid bg-gris alturaFuncionamiento">
@@ -45,12 +55,23 @@
         <p>
             Existen diversos materiales que son utilizados para realizar una impresión 3D. Según los requerimientos de la pieza, la materialidad le otorgará las características necesarias.
         </p>
+
+        <!--Inicio materiales-->
         <div class="row">
+
+        <!--PLA-->
         <div class="col-lg-4 col-md-6 p-3">
-            <img src="https://placekitten.com/300" class="img-fluid img-thumbnail " alt="..." data-toggle="modal" data-target="#PLA">
+            <div class="imagen-material">
+                <img src="Imagenes/Materiales/PLA.jpg" class="img-fluid rounded" alt="...">
+                <div class="overlay" data-toggle="modal" data-target="#PLA">
+                    <div class="text">
+                        <p class="h6 text-muted-50">Presione para más información</p>
+                    </div>
+                </div>
+            </div>
             <h5>PLA</h5>
-            
-        </div><!-- /.col-lg-4 -->
+        </div>
+
         <!-- Modal -->
         <div class="modal fade" id="PLA" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -70,10 +91,18 @@
                 </div>
             </div>
             </div>
-        </div>
+        </div><!-- /.col-lg-4 -->
           
+        <!--ABS-->
         <div class="col-lg-4 col-md-6 p-3">
-            <img src="https://placekitten.com/300" class="img-fluid img-thumbnail" alt="..." data-toggle="modal" data-target="#ABS">
+            <div class="imagen-material">
+                <img src="Imagenes/Materiales/ABS2.jpg" class="img-fluid rounded" alt="...">
+                <div class="overlay" data-toggle="modal" data-target="#ABS">
+                    <div class="text">
+                        <p class="h6 text-muted-50">Presione para más información</p>
+                    </div>
+                </div>
+            </div>
             <h5>ABS</h5>
 
         <!-- Modal -->
@@ -96,10 +125,18 @@
             </div>
             </div>
         </div>
-            
         </div><!-- /.col-lg-4 -->
+
+        <!--PETG-->
         <div class="col-lg-4 col-md-6 p-3">
-            <img src="https://placekitten.com/300" class="img-fluid img-thumbnail" alt="..." data-toggle="modal" data-target="#PETG">
+            <div class="imagen-material">
+                <img src="Imagenes/Materiales/PETG.png" class="img-fluid rounded bg-light" alt="...">
+                <div class="overlay" data-toggle="modal" data-target="#PETG">
+                    <div class="text">
+                        <p class="h6 text-muted-50">Presione para más información</p>
+                    </div>
+                </div>
+            </div>
             <h5>PETG</h5>
 
         <!-- Modal -->
@@ -124,10 +161,50 @@
             </div>
             </div>
         </div>
-            
         </div><!-- /.col-lg-4 -->
+        
+        <!--PETG MEDICINA-->
         <div class="col-lg-4 col-md-6 p-3">
-            <img src="https://placekitten.com/300" class="img-fluid img-thumbnail" alt="..." data-toggle="modal" data-target="#NYLON">
+            <div class="imagen-material">
+                <img src="Imagenes/Materiales/PETG-Medico.jpg" class="img-fluid rounded" alt="...">
+                <div class="overlay" data-toggle="modal" data-target="#petg-m">
+                    <div class="text">
+                        <p class="h6 text-muted-50">Presione para más información</p>
+                    </div>
+                </div>
+            </div>
+            <h5>PETG (Medicina)</h5>
+
+        <!-- Modal -->
+        <div class="modal fade" id="PETG-M" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                <h5 class="modal-title" id="staticBackdropLabel">PETG (Medicina)</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Es un material único de PETG de alta resistencia con excelentes capacidades de impresión a alta temperatura. Los usuarios saben que la impresión de pequeños detalles de algunas piezas puede ser difícil debido a la acumulación térmica. Es mucho menos susceptible a estos problemas térmicos y permite detalles más finos sin distorsión. 
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div><!-- /.col-lg-4 -->
+
+        <!--NYLON-->
+        <div class="col-lg-4 col-md-6 p-3">
+            <div class="imagen-material">
+                <img src="Imagenes/Materiales/Nylon.jpg" class="img-fluid rounded" alt="...">
+                <div class="overlay" data-toggle="modal" data-target="#NYLON">
+                    <div class="text">
+                        <p class="h6 text-muted-50">Presione para más información</p>
+                    </div>
+                </div>
+            </div>
             <h5>NYLON</h5>
 
         <!-- Modal -->
@@ -150,11 +227,18 @@
             </div>
             </div>
         </div>
-            
-
         </div><!-- /.col-lg-4 -->
+
+        <!--NYLON MEDICINA-->
         <div class="col-lg-4 col-md-6 p-3">
-            <img src="https://placekitten.com/300" class="img-fluid img-thumbnail" alt="..." data-toggle="modal" data-target="#NYLON-M">
+            <div class="imagen-material">
+                <img src="Imagenes/Materiales/Nylon-Medico.jpg" class="img-fluid rounded" alt="...">
+                <div class="overlay" data-toggle="modal" data-target="#NYLON-M">
+                    <div class="text">
+                        <p class="h6 text-muted-50">Presione para más información</p>
+                    </div>
+                </div>
+            </div>
             <h5>NYLON (Medicina)</h5>
             
         <!-- Modal -->
@@ -179,32 +263,8 @@
             </div>
             </div>
         </div>
-
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 col-md-6 p-3">
-            <img src="https://placekitten.com/300" class="img-fluid img-thumbnail" alt="..." data-toggle="modal" data-target="#PETG-M">
-            <h5>PETG (Medicina)</h5>
 
-        <!-- Modal -->
-        <div class="modal fade" id="PETG-M" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-dark text-light">
-                <h5 class="modal-title" id="staticBackdropLabel">PETG (Medicina)</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Es un material único de PETG de alta resistencia con excelentes capacidades de impresión a alta temperatura. Los usuarios saben que la impresión de pequeños detalles de algunas piezas puede ser difícil debido a la acumulación térmica. Es mucho menos susceptible a estos problemas térmicos y permite detalles más finos sin distorsión. 
-                    </p>
-                </div>
-            </div>
-            </div>
-        </div>
-
-        </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
     </div>
 </div>
@@ -215,30 +275,30 @@
     <div class="container-fluid bg-dark alturaFuncionamiento">
         <div class="container marketing text-center text-white pt-3">
             <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <h5>Ubicación</h5>
                 <p class="text-warning">Calle Falsa 123</p>
                 
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <h5>Teléfono</h5>
                 <p class="text-warning">(+54) 11 1234-5678</p>
                 
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <h5>WhatsApp</h5>
                 <p class="text-warning">(+54) 11 1234-5678</p>
                 
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <h5>E-mail</h5>
                 <p class="text-warning">imprento@gmail.com</p>
-
+  
             </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
             <div class="col-lg-12">
                 <h6>© 2021 Imprento - All rights reserved</h6>
-
+  
             </div><!-- /.col-lg-4 -->
         </div>
     </div>
