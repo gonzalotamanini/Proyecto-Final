@@ -128,11 +128,28 @@ $margenIcon: 10px;
     min-height: 100vh;
 }
 
-#posicion-carousel{
+.imagen-carousel {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
     height: auto;
+    overflow: hidden;
+}
+
+.imagen-carousel-1{
+    background-image: url("../Imagenes/HOME-PAGE.jpg");
+}
+
+.imagen-carousel-2{
+    background-image: url("../Imagenes/HOME-PAGE-2.jpg");
+}
+
+.imagen-carousel-3{
+    background-image: url("../Imagenes/HOME-PAGE-3.jpg");
+}
+
+.imagen-carousel-4{
+    background-image: url("../Imagenes/HOME-PAGE-4.jpg");
 }
 
 .oscuridad-carousel {
@@ -332,15 +349,14 @@ svg {
         padding-top: 200px;
     }
     #texto-alineado {
-        text-align: center;
+        text-align: left;
     }
-    #posicion-carousel{
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right;
+    .imagen-carousel {
         height: 100vh;
         width: auto;
+        overflow: hidden;
     }
+
     .imagen-usos {
         overflow: hidden;
         width: 350px;
@@ -415,11 +431,11 @@ svg {
     }
 
     .whatsapp {
-        bottom:$separacionIcon;
+        bottom:$separacionIcon+35;
     }
     
     .instagram {
-        bottom:($sizeIcon+$separacionIcon+$margenIcon);
+        bottom:($sizeIcon+$separacionIcon+$margenIcon)+35;
     }
 
     /*PORTADA*/
@@ -461,7 +477,11 @@ svg {
     /*INDEX*/
     .oscuridad-carousel {
         background-color: rgb(0, 0, 0);
-        opacity: 0.5;
+        opacity: 0.3;
+    }
+
+    #texto-alineado {
+        text-align: center;
     }
 
     /*404*/
@@ -502,9 +522,34 @@ svg {
 }
 
 @media (min-width:576px) and (max-width:992px) {
+    /*404*/
     .imagen-error {
         height: 60vh;
     }
+    
+    /*INDEX*/
+    .padding-titulo {
+        font-size: 50pt;
+    }
+
+    .padding-subtitulo {
+        font-size: 20pt;
+    }
+
+    #texto-alineado {
+        text-align: center;
+    }
+
+    .oscuridad-carousel {
+        background-color: rgb(0, 0, 0);
+        opacity: 0.3;
+    }
+
+    .carousel-caption {
+        padding-bottom: 25%;
+    }
+
+    /*PORTADA*/
     .altura-portada {
         position: relative;
         width: 100%;
