@@ -132,8 +132,9 @@ $margenIcon: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    height: auto;
     overflow: hidden;
+    height: 100vh;
+    width: auto;
 }
 
 .imagen-carousel-1{
@@ -154,6 +155,7 @@ $margenIcon: 10px;
 
 .oscuridad-carousel {
     background-color: rgb(255, 255, 255);
+    opacity: 1;
 }
 
 .padding-titulo {

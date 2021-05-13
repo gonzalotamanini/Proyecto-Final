@@ -101,8 +101,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  height: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100vh;
+  width: auto; }
 
 .imagen-carousel-1 {
   background-image: url("../Imagenes/HOME-PAGE.jpg"); }
@@ -117,7 +118,8 @@
   background-image: url("../Imagenes/HOME-PAGE-4.jpg"); }
 
 .oscuridad-carousel {
-  background-color: white; }
+  background-color: white;
+  opacity: 1; }
 
 .padding-titulo {
   padding-bottom: auto;
