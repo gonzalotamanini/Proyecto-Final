@@ -1,5 +1,10 @@
 /*Generales*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*FOOTER*/
+#design {
+  font-size: 14px;
+  margin-bottom: 5px; }
+
 /*ICONOS*/
 .social {
   position: fixed;
@@ -77,8 +82,14 @@
   border-left: 6px solid transparent;
   content: ''; }
 
-#achicar-logo {
-  width: 150px; }
+#propiedades-logo-completo {
+  height: 50px;
+  margin-left: 24px; }
+
+#propiedades-logo {
+  height: 50px;
+  margin-left: 24px;
+  display: none; }
 
 /*INDEX*/
 .alturaFuncionamiento {
@@ -99,7 +110,15 @@
   background-position: right;
   overflow: hidden;
   height: 100vh;
-  width: auto; }
+  width: auto;
+  animation: zoom-foto 7s infinite ease-in-out;
+  animation-delay: 1s; }
+
+@keyframes zoom-foto {
+  from {
+    transform: scale(1, 1); }
+  to {
+    transform: scale(1.15, 1.15); } }
 
 .imagen-carousel-1 {
   background-image: url("../Imagenes/HOME-PAGE.jpg"); }
@@ -143,6 +162,10 @@
 
 .boton-cotizar:hover {
   background-color: #85C7F7; }
+
+.tamano-icon {
+  height: 50px;
+  width: auto; }
 
 /*CATALOGO*/
 .imagen-catalogo {
@@ -320,19 +343,25 @@ svg {
     font-weight: 600; }
   #botones-submenu:hover {
     color: #3E8DDD; }
-  #achicar-logo {
-    width: 100px; }
+  #propiedades-logo-completo {
+    display: none; }
+  #propiedades-logo {
+    margin-left: 0;
+    display: inline; }
   .dropdown-menu:after {
     border-bottom: 6px solid transparent; }
   /*ICONOS*/
   .social {
     width: 50px;
     height: 50px;
-    right: 20px; }
+    right: 20px;
+    opacity: 0.8; }
   .whatsapp {
-    bottom: 55px; }
+    bottom: 20px; }
   .instagram {
-    bottom: 115px; }
+    bottom: 80px; }
+  .tamano-icon {
+    display: none; }
   /*PORTADA*/
   .altura-portada {
     height: 80vw; }
@@ -387,12 +416,20 @@ svg {
     transform: translate(-50%, -50%);
     font-size: 8px; }
   .advertencia-error {
-    font-size: 16px; } }
+    font-size: 16px; }
+  /*COTIZAR*/
+  #buscador {
+    text-align: left; } }
 
 @media (min-width: 576px) and (max-width: 992px) {
   /*404*/
   .imagen-error {
     height: 60vh; }
+  /*LOGO*/
+  #propiedades-logo-completo {
+    display: none; }
+  #propiedades-logo {
+    display: inline; }
   /*INDEX*/
   .padding-titulo {
     font-size: 50pt; }
@@ -405,6 +442,9 @@ svg {
     opacity: 0.3; }
   .carousel-caption {
     padding-bottom: 25%; }
+  /*ICONOS*/
+  .tamano-icon {
+    display: none; }
   /*PORTADA*/
   .altura-portada {
     position: relative;
@@ -436,12 +476,19 @@ svg {
     background-position: 50% 50%; } }
 
 @media (min-width: 1200px) {
+  /*INDEX*/
   .imagen-usos {
     overflow: hidden;
     width: 245.5px;
     height: 199.2px; } }
 
 @media (min-width: 1500px) {
+  /*HEADER*/
+  #propiedades-logo-completo {
+    margin-left: 230px; }
+  .ocultar-telefono {
+    margin-right: 230px !important; }
+  /*INDEX*/
   .padding-titulo {
     padding-bottom: 5%;
     font-size: 50pt; }
