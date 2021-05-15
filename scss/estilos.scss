@@ -195,10 +195,44 @@ $margenIcon: 10px;
     text-align: left;
 }
 
+.container-usos {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
 .imagen-usos {
     overflow: hidden;
-    width: 245.5px;
-    height: 199.2px;
+    width: 100%;
+    height: auto;
+}
+
+.imagen-usos__texto {
+    color: black;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+.container-usos:hover .overlay {
+    opacity: 1;
 }
 
 .boton-index {
