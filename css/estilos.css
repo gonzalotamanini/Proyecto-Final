@@ -163,14 +163,14 @@
 .imagen-usos__texto {
   color: black;
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center; }
 
-.overlay {
+.overlay-usos {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -182,7 +182,7 @@
   transition: .5s ease;
   background-color: rgba(255, 255, 255, 0.6); }
 
-.container-usos:hover .overlay {
+.container-usos:hover .overlay-usos {
   opacity: 1; }
 
 .boton-index {
@@ -269,7 +269,7 @@ svg {
 .imagen-material {
   width: auto; }
 
-.overlay {
+.overlay-materiales {
   position: absolute;
   top: 16px;
   bottom: 51px;
@@ -280,7 +280,7 @@ svg {
   transition: .5s ease;
   background-color: rgba(255, 255, 255, 0.5); }
 
-.imagen-material:hover .overlay {
+.imagen-material:hover .overlay-materiales {
   opacity: 1; }
 
 .text {
