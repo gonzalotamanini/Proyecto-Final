@@ -1,5 +1,8 @@
 /*Generales*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.negrita {
+  font-weight: 600; }
+
 /*FOOTER*/
 #design {
   font-size: 14px;
@@ -175,7 +178,7 @@
   align-items: center;
   justify-content: center; }
 
-/*PORTADA*/
+/*PORTADAS*/
 .altura-portada {
   position: relative;
   width: 100%;
@@ -261,6 +264,28 @@ svg {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center; }
+
+/*IMPRESION*/
+ul {
+  padding-inline-start: 0px !important; }
+
+.explicacion {
+  width: 100%; }
+
+.explicacion-infill {
+  background-image: url("../Imagenes/Infill/Explicacion.svg");
+  height: 0;
+  padding-top: 53.7%;
+  background-size: cover; }
+
+.alturaDeCapa {
+  width: 100%; }
+
+.alturaDeCapa-imagen {
+  background-image: url("../Imagenes/Infill/Layer-1800px.jpg");
+  height: 0;
+  padding-top: 53.7%;
+  background-size: cover; }
 
 /*ERROR 404*/
 .bg-error {
@@ -392,6 +417,14 @@ svg {
     opacity: 0.3; }
   #texto-alineado {
     text-align: center; }
+  /*IMPRESION*/
+  .explicacion-infill {
+    background-image: url("../Imagenes/Infill/Explicacion-576px.svg");
+    height: 0;
+    padding-top: 74.6%;
+    background-size: cover; }
+  .alturaDeCapa-imagen {
+    background-image: url("../Imagenes/Infill/Layer-576px.jpg"); }
   /*404*/
   .altura-error {
     height: 80vh;
@@ -436,7 +469,8 @@ svg {
   .padding-subtitulo {
     font-size: 20pt; }
   #texto-alineado {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 0 !important; }
   .oscuridad-carousel {
     background-color: black;
     opacity: 0.3; }
@@ -473,14 +507,25 @@ svg {
     background-position: 50% 50%; }
   .altura-portada__infill {
     background-image: url("../Imagenes/Portadas/PortadaInfill-992px.jpg");
-    background-position: 50% 50%; } }
+    background-position: 50% 50%; }
+  /*IMPRESION*/
+  .alturaDeCapa-imagen {
+    background-image: url("../Imagenes/Infill/Layer-992px.jpg"); } }
 
 @media (min-width: 1200px) {
   /*INDEX*/
   .imagen-usos {
     overflow: hidden;
     width: 245.5px;
-    height: 199.2px; } }
+    height: 199.2px; }
+  /*IMPRESION*/
+  .tamano-imagen-infill {
+    width: 200px; } }
+
+@media (max-width: 1380px) {
+  /*MATERIALES*/
+  .margenes-infill {
+    margin: auto 15%; } }
 
 @media (min-width: 1500px) {
   /*HEADER*/

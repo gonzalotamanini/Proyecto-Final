@@ -7,6 +7,10 @@ $sizeIcon: 60px;
 $separacionIcon: 40px;
 $margenIcon: 10px;
 
+.negrita {
+    font-weight: 600;
+}
+
 /*FOOTER*/
 #design {
     font-size: 14px;
@@ -225,7 +229,7 @@ $margenIcon: 10px;
     justify-content: center;
 }
 
-/*PORTADA*/
+/*PORTADAS*/
 .altura-portada {
     position: relative;
     width: 100%;
@@ -323,6 +327,33 @@ svg {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+/*IMPRESION*/
+ul {
+    padding-inline-start: 0px !important;
+}
+
+.explicacion {
+    width: 100%;
+}
+
+.explicacion-infill {
+    background-image: url("../Imagenes/Infill/Explicacion.svg");
+    height: 0;
+    padding-top: 53.7%;
+    background-size: cover;
+}
+
+.alturaDeCapa {
+    width: 100%;
+}
+
+.alturaDeCapa-imagen {
+    background-image: url("../Imagenes/Infill/Layer-1800px.jpg");
+    height: 0;
+    padding-top: 53.7%;
+    background-size: cover;
 }
 
 /*ERROR 404*/
@@ -520,6 +551,18 @@ svg {
         text-align: center;
     }
 
+    /*IMPRESION*/
+    .explicacion-infill {
+        background-image: url("../Imagenes/Infill/Explicacion-576px.svg");
+        height: 0;
+        padding-top: 74.6%;
+        background-size: cover;
+    }
+
+    .alturaDeCapa-imagen {
+        background-image: url("../Imagenes/Infill/Layer-576px.jpg");
+    }
+
     /*404*/
     .altura-error {
         height: 80vh;
@@ -587,6 +630,7 @@ svg {
 
     #texto-alineado {
         text-align: center;
+        padding-bottom: 0 !important;
     }
 
     .oscuridad-carousel {
@@ -639,6 +683,10 @@ svg {
         background-image: url("../Imagenes/Portadas/PortadaInfill-992px.jpg");
         background-position: 50% 50%;
     }
+    /*IMPRESION*/
+    .alturaDeCapa-imagen {
+        background-image: url("../Imagenes/Infill/Layer-992px.jpg");
+    }
 }
 
 @media (min-width:1200px) {
@@ -647,6 +695,18 @@ svg {
         overflow: hidden;
         width: 245.5px;
         height: 199.2px;
+    }
+
+    /*IMPRESION*/
+    .tamano-imagen-infill {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1380px) {
+    /*MATERIALES*/
+    .margenes-infill {
+        margin: auto 15%;
     }
 }
 
