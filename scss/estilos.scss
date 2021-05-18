@@ -51,14 +51,6 @@ $margenIcon: 10px;
 }
 
 /*HEADER*/
-.ocultar-pantalla {
-    visibility: hidden;
-}
-
-.ocultar-telefono {
-    visibility: visible;
-}
-
 .alinear-texto-derecha {
     text-align: left;
 }
@@ -67,12 +59,30 @@ $margenIcon: 10px;
     background-color: #3E8DDD;
 }
 
-#botones-menu {
+#botones-menu-1 {
     color:#28292B;
     font-weight: 600;
 }
 
-#botones-menu:hover {
+#botones-menu-1:hover {
+    color: #3E8DDD;
+}
+
+#botones-menu-2 {
+    color:#28292B;
+    font-weight: 600;
+}
+
+#botones-menu-2:hover {
+    color: #3E8DDD;
+}
+
+#botones-menu-3 {
+    color:#28292B;
+    font-weight: 600;
+}
+
+#botones-menu-3:hover {
     color: #3E8DDD;
 }
 
@@ -85,16 +95,26 @@ $margenIcon: 10px;
     color: #3E8DDD;
 }
 
-
 #bg-submenu {
     background-color:#5f7085;
     font-weight: 600;
     color: white;
 }
 
-#boton-cotizar {
+#boton-cotizar-telefono {
     background-color: #3E8DDD;
     font-weight: 600;
+    display: inline;
+}
+
+#boton-cotizar:hover {
+    background-color: #85C7F7;
+}
+
+#boton-cotizar-pantalla {
+    background-color: #3E8DDD;
+    font-weight: 600;
+    display: none;
 }
 
 #boton-cotizar:hover {
@@ -124,16 +144,8 @@ $margenIcon: 10px;
 }
 
 /*INDEX*/
-.alturaFuncionamiento {
-    padding: 0.5% 0 0.5% 0;
-}
-
 .bg-gris {
     background-color: $gris;
-}
-
-.pt-100 {
-    padding-top: 100px;
 }
 
 .altura-100 {
@@ -254,6 +266,10 @@ $margenIcon: 10px;
     width: auto;
 }
 
+#subtitulo-usos {
+    display: none;
+}
+
 /*CATALOGO*/
 .imagen-catalogo {
     overflow: hidden;
@@ -277,11 +293,7 @@ $margenIcon: 10px;
 }
 
 .altura-portada__materiales {
-    background-image: url("../Imagenes/Portadas/PortadaMateriales.jpg");
-}
-
-.altura-portada__calidad {
-    background-image: url("../Imagenes/Portadas/PortadaCalidad.jpg");
+    background-image: url("../Imagenes/Portadas/PortadaMateriales-1800px.jpg");
 }
 
 .altura-portada__contacto {
@@ -293,8 +305,12 @@ $margenIcon: 10px;
     background-image: url("../Imagenes/Portadas/PortadaCatalogo-1800px.png");
 }
 
-.altura-portada__infill {
+.altura-portada__impresion {
     background-image: url("../Imagenes/Portadas/PortadaInfill-1800px.jpg");
+}
+
+.altura-portada__cotizar {
+    background-image: url("../Imagenes/Portadas/PortadaCotizar-1800px.jpg");
 }
 
 svg {
@@ -436,9 +452,6 @@ ul {
 
 /* MEDIA QUERIES*/
 @media (max-width:768px) {
-    .pt-100 {
-        padding-top: 200px;
-    }
     #texto-alineado {
         text-align: left;
     }
@@ -473,11 +486,11 @@ ul {
 
 @media (max-width:576px) {
     /*HEADER*/
-    .ocultar-pantalla {
-        visibility: visible;
+    #boton-cotizar-pantalla {
+        display: inline;
     }
     
-    .ocultar-telefono {
+    #boton-cotizar-telefono {
         display: none;
     }
 
@@ -551,6 +564,7 @@ ul {
         -webkit-text-stroke-width: 0.5px;
         -webkit-text-stroke-color: white;
         justify-content: center;
+        padding-bottom: 40%;
     }
     
     .subtitulo-portada {
@@ -558,7 +572,7 @@ ul {
         color: white;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        visibility: hidden;
+        display: none;
     }
     
     .pie-portada {
@@ -570,9 +584,17 @@ ul {
         background-position: 50% 50%;
     }
 
-    .altura-portada__infill {
+    .altura-portada__impresion {
         background-image: url("../Imagenes/Portadas/PortadaInfill-576px.jpg");
         background-position: 50% 50%;
+    }
+
+    .altura-portada__cotizar {
+        background-image: url("../Imagenes/Portadas/PortadaCotizar-576px.jpg");
+    }
+
+    .altura-portada__materiales {
+        background-image: url("../Imagenes/Portadas/PortadaMateriales-576px.jpg");
     }
 
     /*INDEX*/
@@ -584,6 +606,11 @@ ul {
     #texto-alineado {
         text-align: center;
     }
+
+    #subtitulo-usos {
+        display: inline;
+    }
+
 
     /*IMPRESION*/
     .explicacion-infill {
@@ -676,6 +703,10 @@ ul {
         padding-bottom: 25%;
     }
 
+    #subtitulo-usos {
+        display: inline;
+    }
+
     /*ICONOS*/
     .tamano-icon {
         display: none;
@@ -713,9 +744,17 @@ ul {
         background-image: url("../Imagenes/Portadas/PortadaCatalogo-992px.png");
         background-position: 50% 50%;
     }
-    .altura-portada__infill {
+    .altura-portada__impresion {
         background-image: url("../Imagenes/Portadas/PortadaInfill-992px.jpg");
         background-position: 50% 50%;
+    }
+
+    .altura-portada__cotizar {
+        background-image: url("../Imagenes/Portadas/PortadaCotizar-992px.jpg");
+    }
+
+    .altura-portada__materiales {
+        background-image: url("../Imagenes/Portadas/PortadaMateriales-992px.jpg");
     }
     /*IMPRESION*/
     .alturaDeCapa-imagen {
@@ -737,7 +776,7 @@ ul {
     }
 }
 
-@media (max-width: 1380px) {
+@media (max-width:1380px) {
     /*MATERIALES*/
     .margenes-infill {
         margin: auto 15%;
@@ -750,7 +789,7 @@ ul {
         margin-left: 230px;
     }
 
-    .ocultar-telefono {
+    #boton-cotizar-telefono {
         margin-right: 230px !important;
     }
 

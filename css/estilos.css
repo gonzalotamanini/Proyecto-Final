@@ -37,23 +37,31 @@
   background-image: url("../Imagenes/Iconos/instagram-negro.svg"); }
 
 /*HEADER*/
-.ocultar-pantalla {
-  visibility: hidden; }
-
-.ocultar-telefono {
-  visibility: visible; }
-
 .alinear-texto-derecha {
   text-align: left; }
 
 .bg-azul {
   background-color: #3E8DDD; }
 
-#botones-menu {
+#botones-menu-1 {
   color: #28292B;
   font-weight: 600; }
 
-#botones-menu:hover {
+#botones-menu-1:hover {
+  color: #3E8DDD; }
+
+#botones-menu-2 {
+  color: #28292B;
+  font-weight: 600; }
+
+#botones-menu-2:hover {
+  color: #3E8DDD; }
+
+#botones-menu-3 {
+  color: #28292B;
+  font-weight: 600; }
+
+#botones-menu-3:hover {
   color: #3E8DDD; }
 
 #botones-submenu {
@@ -68,9 +76,18 @@
   font-weight: 600;
   color: white; }
 
-#boton-cotizar {
+#boton-cotizar-telefono {
   background-color: #3E8DDD;
-  font-weight: 600; }
+  font-weight: 600;
+  display: inline; }
+
+#boton-cotizar:hover {
+  background-color: #85C7F7; }
+
+#boton-cotizar-pantalla {
+  background-color: #3E8DDD;
+  font-weight: 600;
+  display: none; }
 
 #boton-cotizar:hover {
   background-color: #85C7F7; }
@@ -95,14 +112,8 @@
   display: none; }
 
 /*INDEX*/
-.alturaFuncionamiento {
-  padding: 0.5% 0 0.5% 0; }
-
 .bg-gris {
   background-color: #dbdada; }
-
-.pt-100 {
-  padding-top: 100px; }
 
 .altura-100 {
   min-height: 100vh; }
@@ -200,6 +211,9 @@
   height: 50px;
   width: auto; }
 
+#subtitulo-usos {
+  display: none; }
+
 /*CATALOGO*/
 .imagen-catalogo {
   overflow: hidden;
@@ -221,10 +235,7 @@
   overflow: hidden; }
 
 .altura-portada__materiales {
-  background-image: url("../Imagenes/Portadas/PortadaMateriales.jpg"); }
-
-.altura-portada__calidad {
-  background-image: url("../Imagenes/Portadas/PortadaCalidad.jpg"); }
+  background-image: url("../Imagenes/Portadas/PortadaMateriales-1800px.jpg"); }
 
 .altura-portada__contacto {
   background-image: url("../Imagenes/Portadas/PortadaContacto-1800px.jpg");
@@ -233,8 +244,11 @@
 .altura-portada__catalogo {
   background-image: url("../Imagenes/Portadas/PortadaCatalogo-1800px.png"); }
 
-.altura-portada__infill {
+.altura-portada__impresion {
   background-image: url("../Imagenes/Portadas/PortadaInfill-1800px.jpg"); }
+
+.altura-portada__cotizar {
+  background-image: url("../Imagenes/Portadas/PortadaCotizar-1800px.jpg"); }
 
 svg {
   position: absolute;
@@ -354,8 +368,6 @@ ul {
 
 /* MEDIA QUERIES*/
 @media (max-width: 768px) {
-  .pt-100 {
-    padding-top: 200px; }
   #texto-alineado {
     text-align: left; }
   .imagen-carousel {
@@ -381,9 +393,9 @@ ul {
 
 @media (max-width: 576px) {
   /*HEADER*/
-  .ocultar-pantalla {
-    visibility: visible; }
-  .ocultar-telefono {
+  #boton-cotizar-pantalla {
+    display: inline; }
+  #boton-cotizar-telefono {
     display: none; }
   .alinear-texto-derecha {
     text-align: right;
@@ -426,27 +438,34 @@ ul {
     font-family: 'Montserrat', sans-serif;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: white;
-    justify-content: center; }
+    justify-content: center;
+    padding-bottom: 40%; }
   .subtitulo-portada {
     font-size: 12px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    visibility: hidden; }
+    display: none; }
   .pie-portada {
     font-size: 14px; }
   .altura-portada__catalogo {
     background-image: url("../Imagenes/Portadas/PortadaCatalogo-576px.png");
     background-position: 50% 50%; }
-  .altura-portada__infill {
+  .altura-portada__impresion {
     background-image: url("../Imagenes/Portadas/PortadaInfill-576px.jpg");
     background-position: 50% 50%; }
+  .altura-portada__cotizar {
+    background-image: url("../Imagenes/Portadas/PortadaCotizar-576px.jpg"); }
+  .altura-portada__materiales {
+    background-image: url("../Imagenes/Portadas/PortadaMateriales-576px.jpg"); }
   /*INDEX*/
   .oscuridad-carousel {
     background-color: black;
     opacity: 0.3; }
   #texto-alineado {
     text-align: center; }
+  #subtitulo-usos {
+    display: inline; }
   /*IMPRESION*/
   .explicacion-infill {
     background-image: url("../Imagenes/Infill/Explicacion-576px.svg");
@@ -506,6 +525,8 @@ ul {
     opacity: 0.3; }
   .carousel-caption {
     padding-bottom: 25%; }
+  #subtitulo-usos {
+    display: inline; }
   /*ICONOS*/
   .tamano-icon {
     display: none; }
@@ -535,9 +556,13 @@ ul {
   .altura-portada__catalogo {
     background-image: url("../Imagenes/Portadas/PortadaCatalogo-992px.png");
     background-position: 50% 50%; }
-  .altura-portada__infill {
+  .altura-portada__impresion {
     background-image: url("../Imagenes/Portadas/PortadaInfill-992px.jpg");
     background-position: 50% 50%; }
+  .altura-portada__cotizar {
+    background-image: url("../Imagenes/Portadas/PortadaCotizar-992px.jpg"); }
+  .altura-portada__materiales {
+    background-image: url("../Imagenes/Portadas/PortadaMateriales-992px.jpg"); }
   /*IMPRESION*/
   .alturaDeCapa-imagen {
     background-image: url("../Imagenes/Infill/Layer-992px.jpg"); } }
@@ -561,7 +586,7 @@ ul {
   /*HEADER*/
   #propiedades-logo-completo {
     margin-left: 230px; }
-  .ocultar-telefono {
+  #boton-cotizar-telefono {
     margin-right: 230px !important; }
   /*INDEX*/
   .padding-titulo {
