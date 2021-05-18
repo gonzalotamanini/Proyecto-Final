@@ -1,7 +1,8 @@
 /*Generales*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-$azul: #089FDE;
+$azul: #3E8DDD;
+
 $gris: #dbdada;
 $sizeIcon: 60px;
 $separacionIcon: 40px;
@@ -55,9 +56,6 @@ $margenIcon: 10px;
     text-align: left;
 }
 
-.bg-azul {
-    background-color: #3E8DDD;
-}
 
 #botones-menu-1 {
     color:#28292B;
@@ -65,7 +63,7 @@ $margenIcon: 10px;
 }
 
 #botones-menu-1:hover {
-    color: #3E8DDD;
+    color: $azul;
 }
 
 #botones-menu-2 {
@@ -74,7 +72,7 @@ $margenIcon: 10px;
 }
 
 #botones-menu-2:hover {
-    color: #3E8DDD;
+    color: $azul;
 }
 
 #botones-menu-3 {
@@ -83,7 +81,7 @@ $margenIcon: 10px;
 }
 
 #botones-menu-3:hover {
-    color: #3E8DDD;
+    color: $azul;
 }
 
 #botones-submenu {
@@ -92,7 +90,7 @@ $margenIcon: 10px;
 }
 
 #botones-submenu:hover {
-    color: #3E8DDD;
+    color: $azul;
 }
 
 #bg-submenu {
@@ -102,7 +100,7 @@ $margenIcon: 10px;
 }
 
 #boton-cotizar-telefono {
-    background-color: #3E8DDD;
+    background-color: $azul;
     font-weight: 600;
     display: inline;
 }
@@ -112,7 +110,7 @@ $margenIcon: 10px;
 }
 
 #boton-cotizar-pantalla {
-    background-color: #3E8DDD;
+    background-color: $azul;
     font-weight: 600;
     display: none;
 }
@@ -252,7 +250,7 @@ $margenIcon: 10px;
 }
 
 .boton-cotizar {
-    background-color: #3E8DDD;
+    background-color: $azul;
     width: 100%;
     color: white;
 }
@@ -272,11 +270,20 @@ $margenIcon: 10px;
 
 /*CATALOGO*/
 .imagen-catalogo {
-    overflow: hidden;
-    width: auto;
-    height: 225px;
+    width: 100%;
+    height: auto;
     align-items: center;
     justify-content: center;
+}
+
+.btn-outline-primary {
+    color: $azul !important;
+    border-color: $azul !important;
+}
+
+.btn-outline-primary:hover {
+    color: white !important;
+    background-color: $azul !important;
 }
 
 /*PORTADAS*/
@@ -408,7 +415,7 @@ ul {
 
 /*ERROR 404*/
 .bg-error {
-    background-color: $azul;
+    background-color: #089FDE;
 }
 
 .altura-error {
@@ -512,7 +519,7 @@ ul {
     }
 
     #botones-submenu:hover {
-        color: #3E8DDD;
+        color: $azul;
     }
 
     #propiedades-logo-completo {

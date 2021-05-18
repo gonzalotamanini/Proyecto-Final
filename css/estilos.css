@@ -40,9 +40,6 @@
 .alinear-texto-derecha {
   text-align: left; }
 
-.bg-azul {
-  background-color: #3E8DDD; }
-
 #botones-menu-1 {
   color: #28292B;
   font-weight: 600; }
@@ -216,11 +213,18 @@
 
 /*CATALOGO*/
 .imagen-catalogo {
-  overflow: hidden;
-  width: auto;
-  height: 225px;
+  width: 100%;
+  height: auto;
   align-items: center;
   justify-content: center; }
+
+.btn-outline-primary {
+  color: #3E8DDD !important;
+  border-color: #3E8DDD !important; }
+
+.btn-outline-primary:hover {
+  color: white !important;
+  background-color: #3E8DDD !important; }
 
 /*PORTADAS*/
 .altura-portada {
