@@ -299,6 +299,86 @@
   opacity: 1;
   display: inline; }
 
+.carousel-catalogo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 800px;
+  height: 598.5px; }
+
+.carousel-catalogo-objeto1-1 {
+  background-image: url("../Imagenes/Catalogo/Objeto1-1.png"); }
+
+.carousel-catalogo-objeto1-2 {
+  background-image: url("../Imagenes/Catalogo/Objeto1-2.png"); }
+
+.carousel-catalogo-objeto1-3 {
+  background-image: url("../Imagenes/Catalogo/Objeto1-3.jpg"); }
+
+.carousel-catalogo-objeto2-1 {
+  background-image: url("../Imagenes/Catalogo/Objeto2-1.jpg"); }
+
+.carousel-catalogo-objeto2-2 {
+  background-image: url("../Imagenes/Catalogo/Objeto2-2.jpg"); }
+
+.carousel-catalogo-objeto2-3 {
+  background-image: url("../Imagenes/Catalogo/Objeto2-3.jpg"); }
+
+.carousel-catalogo-objeto3-1 {
+  background-image: url("../Imagenes/Catalogo/Objeto3-1.jpg"); }
+
+.carousel-catalogo-objeto3-2 {
+  background-image: url("../Imagenes/Catalogo/Objeto3-2.jpg"); }
+
+.carousel-catalogo-objeto3-3 {
+  background-image: url("../Imagenes/Catalogo/Objeto3-3.jpg"); }
+
+.carousel-catalogo-objeto4-1 {
+  background-image: url("../Imagenes/Catalogo/Objeto4-1.jpg"); }
+
+.carousel-catalogo-objeto4-2 {
+  background-image: url("../Imagenes/Catalogo/Objeto4-2.jpg"); }
+
+.carousel-catalogo-objeto5-1 {
+  background-image: url("../Imagenes/Catalogo/Objeto5-1.jpg"); }
+
+.carousel-catalogo-objeto5-2 {
+  background-image: url("../Imagenes/Catalogo/Objeto5-2.jpg"); }
+
+.carousel-catalogo-objeto5-3 {
+  background-image: url("../Imagenes/Catalogo/Objeto5-3.jpg"); }
+
+.carousel-catalogo-objeto6-1 {
+  background-image: url("../Imagenes/Catalogo/Objeto6-1.jpg"); }
+
+.carousel-catalogo-objeto6-2 {
+  background-image: url("../Imagenes/Catalogo/Objeto6-2.jpg"); }
+
+.carousel-catalogo-objeto7-1 {
+  background-image: url("../Imagenes/Catalogo/Objeto7-1.jpg"); }
+
+.carousel-catalogo-objeto7-2 {
+  background-image: url("../Imagenes/Catalogo/Objeto7-2.jpg"); }
+
+.carousel-catalogo-objeto7-3 {
+  background-image: url("../Imagenes/Catalogo/Objeto7-3.jpg"); }
+
+.carousel-catalogo-objeto8-1 {
+  background-image: url("../Imagenes/Catalogo/Objeto8-1.jpeg"); }
+
+.carousel-catalogo-objeto8-2 {
+  background-image: url("../Imagenes/Catalogo/Objeto8-2.jpeg"); }
+
+.carousel-catalogo-objeto9-1 {
+  background-image: url("../Imagenes/Catalogo/Objeto9-1.jpg"); }
+
+.carousel-catalogo-objeto9-2 {
+  background-image: url("../Imagenes/Catalogo/Objeto9-2.jpg"); }
+
+.carousel-catalogo-objeto9-3 {
+  background-image: url("../Imagenes/Catalogo/Objeto9-3.jpg"); }
+
 /*PORTADAS*/
 .altura-portada {
   position: relative;
@@ -579,7 +659,63 @@ ul {
     font-size: 16px; }
   /*COTIZAR*/
   #buscador {
-    text-align: left; } }
+    text-align: left; }
+  /*CATALOGO*/
+  .carousel-catalogo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    width: 342px;
+    height: 257px; }
+  .carousel-catalogo-objeto1-1 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto1-1.png"); }
+  .carousel-catalogo-objeto1-2 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto1-2.png"); }
+  .carousel-catalogo-objeto1-3 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto1-3.jpg"); }
+  .carousel-catalogo-objeto2-1 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto2-1.jpg"); }
+  .carousel-catalogo-objeto2-2 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto2-2.jpg"); }
+  .carousel-catalogo-objeto2-3 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto2-3.jpg"); }
+  .carousel-catalogo-objeto3-1 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto3-1.jpg"); }
+  .carousel-catalogo-objeto3-2 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto3-2.jpg"); }
+  .carousel-catalogo-objeto3-3 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto3-3.jpg"); }
+  .carousel-catalogo-objeto4-1 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto4-1.jpg"); }
+  .carousel-catalogo-objeto4-2 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto4-2.jpg"); }
+  .carousel-catalogo-objeto5-1 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto5-1.jpg"); }
+  .carousel-catalogo-objeto5-2 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto5-2.jpg"); }
+  .carousel-catalogo-objeto5-3 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto5-3.jpg"); }
+  .carousel-catalogo-objeto6-1 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto6-1.jpg"); }
+  .carousel-catalogo-objeto6-2 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto6-2.jpg"); }
+  .carousel-catalogo-objeto7-1 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto7-1.jpg"); }
+  .carousel-catalogo-objeto7-2 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto7-2.jpg"); }
+  .carousel-catalogo-objeto7-3 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto7-3.jpg"); }
+  .carousel-catalogo-objeto8-1 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto8-1.jpeg"); }
+  .carousel-catalogo-objeto8-2 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto8-2.jpeg"); }
+  .carousel-catalogo-objeto9-1 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto9-1.jpg"); }
+  .carousel-catalogo-objeto9-2 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto9-2.jpg"); }
+  .carousel-catalogo-objeto9-3 {
+    background-image: url("../Imagenes/Catalogo/576px/Objeto9-3.jpg"); } }
 
 /*TABLET IPAD*/
 @media (min-width: 576px) and (max-width: 992px) {
@@ -647,7 +783,62 @@ ul {
     background-image: url("../Imagenes/Infill/Layer-992px.jpg"); }
   /*CATALOGO*/
   .desaparecer-objeto-catalogo {
-    display: none; } }
+    display: none; }
+  .carousel-catalogo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    width: 498px;
+    height: 374px; }
+  .carousel-catalogo-objeto1-1 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto1-1.png"); }
+  .carousel-catalogo-objeto1-2 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto1-2.png"); }
+  .carousel-catalogo-objeto1-3 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto1-3.jpg"); }
+  .carousel-catalogo-objeto2-1 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto2-1.jpg"); }
+  .carousel-catalogo-objeto2-2 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto2-2.jpg"); }
+  .carousel-catalogo-objeto2-3 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto2-3.jpg"); }
+  .carousel-catalogo-objeto3-1 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto3-1.jpg"); }
+  .carousel-catalogo-objeto3-2 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto3-2.jpg"); }
+  .carousel-catalogo-objeto3-3 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto3-3.jpg"); }
+  .carousel-catalogo-objeto4-1 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto4-1.jpg"); }
+  .carousel-catalogo-objeto4-2 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto4-2.jpg"); }
+  .carousel-catalogo-objeto5-1 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto5-1.jpg"); }
+  .carousel-catalogo-objeto5-2 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto5-2.jpg"); }
+  .carousel-catalogo-objeto5-3 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto5-3.jpg"); }
+  .carousel-catalogo-objeto6-1 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto6-1.jpg"); }
+  .carousel-catalogo-objeto6-2 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto6-2.jpg"); }
+  .carousel-catalogo-objeto7-1 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto7-1.jpg"); }
+  .carousel-catalogo-objeto7-2 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto7-2.jpg"); }
+  .carousel-catalogo-objeto7-3 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto7-3.jpg"); }
+  .carousel-catalogo-objeto8-1 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto8-1.jpeg"); }
+  .carousel-catalogo-objeto8-2 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto8-2.jpeg"); }
+  .carousel-catalogo-objeto9-1 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto9-1.jpg"); }
+  .carousel-catalogo-objeto9-2 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto9-2.jpg"); }
+  .carousel-catalogo-objeto9-3 {
+    background-image: url("../Imagenes/Catalogo/992px/Objeto9-3.jpg"); } }
 
 @media (min-width: 1200px) {
   /*INDEX*/
