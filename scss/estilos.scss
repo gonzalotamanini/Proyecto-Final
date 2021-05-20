@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 $azul: #3E8DDD;
-
 $gris: #dbdada;
 $sizeIcon: 60px;
 $separacionIcon: 40px;
@@ -274,17 +273,101 @@ $margenIcon: 10px;
     height: auto;
     align-items: center;
     justify-content: center;
+    border-bottom-right-radius: calc(.25rem - 1px) !important;
+    border-bottom-left-radius: calc(.25rem - 1px) !important; 
 }
 
-.btn-outline-primary {
-    color: $azul !important;
-    border-color: $azul !important;
+.imagen-catalogo .social {
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:20px;
+    right:0px;
+  }
+
+.imagen-catalogo .social li a {
+    color:black;
+    background: white;
+    border: 2px solid black;
+    border-radius: 2px;
+    font-size:14px;
+    text-align:center;
+    line-height:40px;
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    display:block;
+    transition:.5s ease 0s;
+}
+  
+.imagen-catalogo .social li a:hover {
+    background: $azul;
+    border: 2px solid $azul;
+    color: white;
+    display:block;
+    transition:.1s ease 0s;
 }
 
-.btn-outline-primary:hover {
-    color: white !important;
-    background-color: $azul !important;
+.imagen-catalogo .social li {
+    display:block;
+    margin:0 0 10px;
+    transition:all .5s;
 }
+
+.imagen-catalogo .social li:nth-child(1) {
+    opacity:0;
+}
+  
+.imagen-catalogo:hover .social li:nth-child(1) {
+    opacity:1;
+}
+  
+.imagen-catalogo .social li:nth-child(2) {
+    opacity:0;
+    transform:translateY(-50px);
+}
+  
+.imagen-catalogo:hover .social li:nth-child(2) {
+    opacity:1;
+    transform:translateY(0);
+}
+
+.imagen-catalogo__texto {
+    color: black;
+    border-radius: 2px;
+    font-size:20px;
+    font-weight:700;
+    text-align: left;
+    padding-left: 5%;
+    position:absolute;
+    left:0;
+    right:0;
+    top:10px;
+    transition:.5s ease;
+}
+
+.overlay-catalogo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.imagen-catalogo:hover .overlay-catalogo {
+    opacity: 1;
+}
+
+.imagen-catalogo:hover .titulo-catalogo {
+    opacity:1;
+    display: inline;
+}
+
 
 /*PORTADAS*/
 .altura-portada {
@@ -413,6 +496,7 @@ ul {
     background-size: cover;
 }
 
+
 /*ERROR 404*/
 .bg-error {
     background-color: #089FDE;
@@ -491,6 +575,8 @@ ul {
     }
 }
 
+
+/*CELULAR*/
 @media (max-width:576px) {
     /*HEADER*/
     #boton-cotizar-pantalla {
@@ -672,6 +758,7 @@ ul {
     }    
 }
 
+/*TABLET IPAD*/
 @media (min-width:576px) and (max-width:992px) {
     /*404*/
     .imagen-error {
@@ -767,6 +854,11 @@ ul {
     .alturaDeCapa-imagen {
         background-image: url("../Imagenes/Infill/Layer-992px.jpg");
     }
+
+    /*CATALOGO*/
+    .desaparecer-objeto-catalogo {
+        display: none;
+    }
 }
 
 @media (min-width:1200px) {
@@ -780,6 +872,14 @@ ul {
     /*IMPRESION*/
     .tamano-imagen-infill {
         width: 200px;
+    }
+}
+
+/*TABLET IPAD PRO*/
+@media (min-width:992px) and (max-width:1024px) {
+    /*CATALOGO*/
+    .desaparecer-objeto-catalogo {
+        display: none;
     }
 }
 
