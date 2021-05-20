@@ -12,6 +12,9 @@ ehthumbs_vista.db
 # Node Modules
 node_modules/
 
+# CALIDAD (no usado)
+.calidad
+
 # Dump file
 *.stackdump
 
