@@ -124,6 +124,11 @@ ORDEN:
 .titulos-footer {
   margin-bottom: 1rem; }
 
+.titulos-footer-contacto {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2; }
+
 /*PORTADA*/
 .altura-portada {
   position: relative;
