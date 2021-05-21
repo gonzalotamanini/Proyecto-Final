@@ -850,7 +850,16 @@ ul {
     background-image: url("../Imagenes/Catalogo/992px/Objeto9-3.jpg"); }
   /*404*/
   .imagen-error {
-    height: 60vh; } }
+    height: 60vh; }
+  .altura-error {
+    height: 80vh;
+    margin: 15vh auto 0; }
+  .imagen-error {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 15px; } }
 
 /*TABLET IPAD PRO*/
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -875,7 +884,19 @@ ul {
     height: 284px; }
   /*CATALOGO*/
   .desaparecer-objeto-catalogo {
-    display: none; } }
+    display: none; }
+  /*404*/
+  .imagen-error {
+    height: 60vh; }
+  .altura-error {
+    height: 80vh;
+    margin: 20vh auto 0; }
+  .imagen-error {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    align-items: center;
+    margin-bottom: 15px; } }
 
 /*1200px Y MAS*/
 @media (min-width: 1200px) {

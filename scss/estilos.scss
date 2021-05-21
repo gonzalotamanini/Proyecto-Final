@@ -1180,6 +1180,17 @@ ul {
     .imagen-error {
         height: 60vh;
     }
+    .altura-error {
+        height: 80vh;
+        margin: 15vh auto 0;
+    }
+    .imagen-error {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        align-items: center;
+        margin-bottom: 15px;
+    }
 }
 
 /*TABLET IPAD PRO*/
@@ -1220,6 +1231,22 @@ ul {
     /*CATALOGO*/
     .desaparecer-objeto-catalogo {
         display: none;
+    }
+
+    /*404*/
+    .imagen-error {
+        height: 60vh;
+    }
+    .altura-error {
+        height: 80vh;
+        margin: 20vh auto 0;
+    }
+    .imagen-error {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        align-items: center;
+        margin-bottom: 15px;
     }
 }
 
