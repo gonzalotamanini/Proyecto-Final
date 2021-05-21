@@ -4,37 +4,34 @@
   font-weight: 600; }
 
 /*FOOTER*/
-#design {
+#design, #derechos {
   font-size: 14px;
-  margin-bottom: 5px; }
+  padding-bottom: 10px;
+  margin-bottom: 0; }
 
-/*ICONOS*/
-.social {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  right: 40px;
-  border-radius: 50px;
-  z-index: 100;
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center; }
+#derechos {
+  margin-top: 10px;
+  padding-bottom: 5px; }
 
-.whatsapp {
-  background-image: url("../Imagenes/Iconos/whatsapp-blanco.svg");
-  background-color: #25d366;
-  bottom: 40px; }
+.lista-footer {
+  list-style: none; }
 
-.whatsapp:hover {
-  background-image: url("../Imagenes/Iconos/whatsapp-negro.svg"); }
+.logo-footer {
+  padding-top: 5px;
+  height: 260px; }
 
-.instagram {
-  bottom: 110px;
-  background-image: url("../Imagenes/Iconos/instagram-blanco.svg");
-  background-color: #8134AF; }
+.social-footer {
+  width: 135px;
+  color: #3E8DDD;
+  font-weight: 600;
+  background-color: #3f464d;
+  border: 0; }
 
-.instagram:hover {
-  background-image: url("../Imagenes/Iconos/instagram-negro.svg"); }
+.contacto-footer {
+  color: #c7a445; }
+
+.titulos-footer {
+  margin-bottom: 1rem; }
 
 /*HEADER*/
 .alinear-texto-derecha {
@@ -147,11 +144,11 @@
   background-color: white;
   opacity: 1; }
 
-.padding-titulo {
+.titulo-index {
   padding-bottom: auto;
   font-size: auto; }
 
-.padding-subtitulo {
+.subtitulo-index {
   padding-bottom: auto;
   font-size: auto; }
 
@@ -204,6 +201,7 @@
 .boton-cotizar:hover {
   background-color: #85C7F7; }
 
+/*COTIZAR*/
 .tamano-icon {
   height: 50px;
   width: auto; }
@@ -225,7 +223,7 @@
   margin: 0;
   position: absolute;
   top: 20px;
-  right: 0px; }
+  right: 20px; }
 
 .imagen-catalogo .social li a {
   color: black;
@@ -537,10 +535,10 @@ ul {
     height: 284px; } }
 
 @media (min-width: 768px) {
-  .padding-titulo {
+  .titulo-index {
     padding-bottom: 5%;
     font-size: 35pt; }
-  .padding-subtitulo {
+  .subtitulo-index {
     padding-bottom: 5%;
     font-size: 20pt; }
   .imagen-usos {
@@ -575,18 +573,10 @@ ul {
     display: inline; }
   .dropdown-menu:after {
     border-bottom: 6px solid transparent; }
-  /*ICONOS*/
-  .social {
-    width: 50px;
-    height: 50px;
-    right: 20px;
-    opacity: 0.8; }
-  .whatsapp {
-    bottom: 20px; }
-  .instagram {
-    bottom: 80px; }
-  .tamano-icon {
-    display: none; }
+  /*FOOTER*/
+  .logo-footer {
+    height: 80px;
+    margin-bottom: 20px; }
   /*PORTADA*/
   .altura-portada {
     height: 80vw; }
@@ -660,6 +650,8 @@ ul {
   /*COTIZAR*/
   #buscador {
     text-align: left; }
+  .tamano-icon {
+    display: none; }
   /*CATALOGO*/
   .carousel-catalogo {
     background-size: cover;
@@ -728,13 +720,13 @@ ul {
   #propiedades-logo {
     display: inline; }
   /*INDEX*/
-  .padding-titulo {
+  .titulo-index {
     font-size: 50pt; }
-  .padding-subtitulo {
+  .subtitulo-index {
     font-size: 20pt; }
   #texto-alineado {
     text-align: center;
-    padding-bottom: 0 !important; }
+    padding-bottom: 20vh; }
   .oscuridad-carousel {
     background-color: black;
     opacity: 0.3; }
@@ -742,9 +734,10 @@ ul {
     padding-bottom: 25%; }
   #subtitulo-usos {
     display: inline; }
-  /*ICONOS*/
-  .tamano-icon {
-    display: none; }
+  .titulo-funcionamiento {
+    font-size: 20px; }
+  .texto-funcionamiento {
+    font-size: 14px; }
   /*PORTADA*/
   .altura-portada {
     position: relative;
@@ -852,6 +845,21 @@ ul {
 
 /*TABLET IPAD PRO*/
 @media (min-width: 992px) and (max-width: 1024px) {
+  /*INDEX*/
+  .titulo-index {
+    font-size: 70pt; }
+  .subtitulo-index {
+    font-size: 30pt; }
+  #texto-alineado {
+    text-align: center;
+    padding-bottom: 20vh; }
+  .oscuridad-carousel {
+    background-color: black;
+    opacity: 0.3; }
+  .carousel-caption {
+    padding-bottom: 25%; }
+  #subtitulo-usos {
+    display: inline; }
   /*CATALOGO*/
   .desaparecer-objeto-catalogo {
     display: none; } }
@@ -868,10 +876,10 @@ ul {
   #boton-cotizar-telefono {
     margin-right: 230px !important; }
   /*INDEX*/
-  .padding-titulo {
+  .titulo-index {
     padding-bottom: 5%;
     font-size: 50pt; }
-  .padding-subtitulo {
+  .subtitulo-index {
     padding-bottom: 5%;
     font-size: 25pt; } }
 
