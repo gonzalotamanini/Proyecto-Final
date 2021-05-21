@@ -209,6 +209,10 @@
 #subtitulo-usos {
   display: none; }
 
+.tamano-imagen-funcionamiento {
+  width: 148px;
+  height: auto; }
+
 /*CATALOGO*/
 .imagen-catalogo {
   width: 100%;
