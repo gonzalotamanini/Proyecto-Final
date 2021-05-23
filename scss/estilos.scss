@@ -344,6 +344,7 @@ svg {
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
   
 .imagen-material:hover .overlay-materiales {
